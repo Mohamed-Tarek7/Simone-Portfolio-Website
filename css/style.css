@@ -1,0 +1,791 @@
+:root{
+    --main: #20c997;
+}
+
+*{
+    text-decoration: none !important;
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: var(--main);
+}
+
+.home{
+    background-image: url(../imgs/home-bg.jpg);
+    background-attachment: fixed;
+}
+
+.home a{
+    color: white;
+}
+
+.nav-item{
+    margin-left: 10px !important;
+    font-weight: 500;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: var(--main) !important;
+}
+
+.fa-twitter:hover{
+    color: #2fa6ec !important;
+    transition-duration: 0.2s;
+}
+
+.fa-facebook-f:hover{
+    color: #1a3fa4 !important;
+    transition-duration: 0.2s;
+}
+
+.fa-basketball:hover{
+    color: #a71aaf !important;
+    transition-duration: 0.2s;
+}
+
+.home-content{
+    height: 85%;
+}
+
+.home-button{
+    height: 50px !important;
+    width: 130px !important;
+    color: var(--main) !important;
+    border-color: var(--main) !important;
+}
+
+.home-button:hover{
+    background-color: var(--main) !important;
+    color: white !important;
+}
+
+@keyframes intro-animation {
+    0%{
+        content: "|";
+    }
+    1%{
+        content: "I|";
+    }
+    2%{
+        content: "I'|";
+    }
+    3%{
+        content: "I'm|";
+    }
+    4%{
+        content: "I'm S|";
+    }
+    5%{
+        content: "I'm Si|";
+    }
+    6%{
+        content: "I'm Sim|";
+    }
+    7%{
+        content: "I'm Simo|";
+    }
+    8%{
+        content: "I'm Simon|";
+    }
+    9%{
+        content: "I'm Simon O|";
+    }
+    10%{
+        content: "I'm Simon Ol|";
+    }
+    11%{
+        content: "I'm Simon Oli|";
+    }
+    12%{
+        content: "I'm Simon Oliv|";
+    }
+    13%{
+        content: "I'm Simon Olivi|";
+    }
+    14%{
+        content: "I'm Simon Olivia.|";
+    }
+    17%{
+        content: "I'm Simon Olivia|";
+    }
+    18%{
+        content: "I'm Simon Olivi|";
+    }
+    19%{
+        content: "I'm Simon Oliv|";
+    }
+    20%{
+        content: "I'm Simon Oli|";
+    }
+    21%{
+        content: "I'm Simon Ol|";
+    }
+    22%{
+        content: "I'm Simon O|";
+    }
+    23%{
+        content: "I'm Simon|";
+    }
+    24%{
+        content: "I'm Simo|";
+    }
+    25%{
+        content: "I'm Sim|";
+    }
+    26%{
+        content: "I'm Si|";
+    }
+    27%{
+        content: "I'm S|";
+    }
+    28%{
+        content: "I'm|";
+    }
+    29%{
+        content: "I'|";
+    }
+    30%{
+        content: "I|";
+    }
+    31%{
+        content: "|";
+    }
+    32%{
+        content: "I|";
+    }
+    33%{
+        content: "I'|";
+    }
+    34%{
+        content: "I'm|";
+    }
+    35%{
+        content: "I'm a|";
+    }
+    36%{
+        content: "I'm a F|";
+    }
+    37%{
+        content: "I'm a Fr|";
+    }
+    38%{
+        content: "I'm a Fre|";
+    }
+    39%{
+        content: "I'm a Free|";
+    }
+    40%{
+        content: "I'm a Freel|";
+    }
+    41%{
+        content: "I'm a Freela|";
+    }
+    42%{
+        content: "I'm a Freelan|";
+    }
+    43%{
+        content: "I'm a Freelanc|";
+    }
+    44%{
+        content: "I'm a Freelance|";
+    }
+    45%{
+        content: "I'm a Freelancer|";
+    }
+    46%{
+        content: "I'm a Freelancer.|";
+    }
+    49%{
+        content: "I'm a Freelancer|";
+    }
+    50%{
+        content: "I'm a Freelance|";
+    }
+    51%{
+        content: "I'm a Freelanc|";
+    }
+    52%{
+        content: "I'm a Freelan|";
+    }
+    53%{
+        content: "I'm a Freela|";
+    }
+    54%{
+        content: "I'm a Freel|";
+    }
+    55%{
+        content: "I'm a Free|";
+    }
+    56%{
+        content: "I'm a Fre|";
+    }
+    57%{
+        content: "I'm a Fr|";
+    }
+    58%{
+        content: "I'm a F|";
+    }
+    59%{
+        content: "I'm a|";
+    }
+    60%{
+        content: "I'm|";
+    }
+    61%{
+        content: "I'|";
+    }
+    62%{
+        content: "I|";
+    }
+    63%{
+        content: "|";
+    }
+    64%{
+        content: "I|";
+    }
+    65%{
+        content: "I'|";
+    }
+    66%{
+        content: "I'm|";
+    }
+    67%{
+        content: "I'm a|";
+    }
+    68%{
+        content: "I'm a P|";
+    }
+    69%{
+        content: "I'm a Ph|";
+    }
+    70%{
+        content: "I'm a Pho|";
+    }
+    71%{
+        content: "I'm a Phot|";
+    }
+    72%{
+        content: "I'm a Photo|";
+    }
+    73%{
+        content: "I'm a Photog|";
+    }
+    74%{
+        content: "I'm a Photogr|";
+    }
+    75%{
+        content: "I'm a Photogra|";
+    }
+    76%{
+        content: "I'm a Photograp|";
+    }
+    77%{
+        content: "I'm a Photograph|";
+    }
+    78%{
+        content: "I'm a Photographe|";
+    }
+    79%{
+        content: "I'm a Photographer|";
+    }
+    80%{
+        content: "I'm a Photographer.|";
+    }
+    83%{
+        content: "I'm a Photographer|";
+    }
+    84%{
+        content: "I'm a Photographe|";
+    }
+    85%{
+        content: "I'm a Photograph|";
+    }
+    86%{
+        content: "I'm a Photograp|";
+    }
+    87%{
+        content: "I'm a Photog|";
+    }
+    88%{
+        content: "I'm a Photo|";
+    }
+    89%{
+        content: "I'm a Phot|";
+    }
+    90%{
+        content: "I'm a Pho|";
+    }
+    91%{
+        content: "I'm a Ph|";
+    }
+    92%{
+        content: "I'm a P|";
+    }
+    93%{
+        content: "I'm a|";
+    }
+    94%{
+        content: "I'm|";
+    }
+    95%{
+        content: "I'|";
+    }
+    96%{
+        content: "I|";
+    }
+    97%{
+        content: "|";
+    }
+    98%{
+        content: "|";
+    }
+    99%{
+        content: "|";
+    }
+    100%{
+        content: "|";
+    }
+}
+
+.intro::after{
+    font-size: 70px;
+    content: "";
+    animation-name: intro-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes arrow-animation {
+    0%{
+        padding-top: 5px;
+        opacity: 10%;
+    }
+    20%{
+        padding-top: 15px;
+        opacity: 15%;
+    }
+    40%{
+        padding-top: 20px;
+        opacity: 20%;
+    }
+    60%{
+        padding-top: 25px;
+        opacity: 30%;
+    }
+    70%{
+        padding-top: 30px;
+        opacity: 40%;
+    }
+    80%{
+        padding-top: 35px;
+        opacity: 50%;
+    }
+    90%{
+        padding-top: 40px;
+        opacity: 60%;
+    }
+    91%{
+        padding-top: 41px;
+        opacity: 65%;
+    }
+    92%{
+        padding-top: 42px;
+        opacity: 70%;
+    }
+    93%{
+        padding-top: 43px;
+        opacity: 75%;
+    }
+    94%{
+        padding-top: 44px;
+        opacity: 80%;
+    }
+    95%{
+        padding-top: 45px;
+        opacity: 85%;
+    }
+    96%{
+        padding-top: 46px;
+        opacity: 90%;
+    }
+    97%{
+        padding-top: 47px;
+        opacity: 95%;
+    }
+    98%{
+        padding-top: 48px;
+        opacity: 98%;
+    }
+    96%{
+        padding-top: 49px;
+        opacity: 99%;
+    }
+    100%{
+        padding-top: 50px;
+        opacity: 100%;
+    }
+}
+
+.arrow{
+    animation-name: arrow-animation !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 1s !important;
+}
+
+.about-title{
+    position: relative;
+}
+
+.about-title::before{
+    content: "";
+    position: absolute;
+    border-bottom: var(--main) solid 2px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100px;
+    margin-top: 5px;
+}
+
+.about-title::after{
+    content: "ABOUT ME";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    opacity: 8%;
+}
+
+.about-button{
+    height: 50px !important;
+    width: 190px !important;
+    border-color: var(--main);
+    background-color: var(--main) !important;
+    transition-duration: 1s !important;
+}
+
+.about-button:hover{
+    background-color: rgb(68, 172, 68) !important;
+}
+
+.info{
+    padding-bottom: 12px !important;
+    border-bottom: rgb(222, 221, 221) 1px solid;
+}
+
+.achievements{
+    padding-right: 12px !important;
+    border-right: rgb(222, 221, 221) 1px solid
+}
+
+.services-title{
+    position: relative;
+}
+
+.services-title::before{
+    content: "";
+    position: absolute;
+    border-bottom: var(--main) solid 2px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100px;
+    margin-top: 5px;
+}
+
+.services-title::after{
+    content: "SERVICES";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    opacity: 8%;
+}
+
+.services p{
+    color: rgb(100, 100, 100);
+}
+
+.services i{
+    color: var(--main);
+}
+
+.serv-icon{
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.resume-title{
+    position: relative;
+}
+
+.resume-title::before{
+    content: "";
+    position: absolute;
+    border-bottom: var(--main) solid 2px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100px;
+    margin-top: 5px;
+}
+
+.resume-title::after{
+    content: "SUMMARY";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 90px;
+    opacity: 8%;
+}
+
+.resume-box{
+    border: 1px solid rgb(222, 221, 221);
+}
+
+.date{
+    background-color: var(--main);
+    color: white;
+    width: max-content;
+}
+
+.about-button{
+    height: 50px !important;
+    width: 190px !important;
+    border-color: var(--main);
+    background-color: var(--main) !important;
+}
+
+.about-button:hover{
+    background-color: #1db688 !important;
+    border-color: #1db688 !important;
+}
+
+.resume-button{
+    height: 50px !important;
+    width: 200px !important;
+    border: #6c757d 2px solid !important;
+    color: #6c757d !important;
+}
+
+.resume-button:hover{
+    color: white !important;
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+}
+
+.portfolio-title{
+    position: relative;
+}
+
+.portfolio-title::before{
+    content: "";
+    position: absolute;
+    border-bottom: var(--main) solid 2px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100px;
+    margin-top: 5px;
+}
+
+.portfolio-title::after{
+    content: "PORTFOLIO";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 85px;
+    opacity: 8%;
+}
+
+.portfolio a:hover{
+    color: var(--main) !important;
+}
+
+.card{
+    margin-bottom: 20px !important;
+}
+
+.img-cont{
+    position: relative;
+    transition-duration: 1s !important;
+}
+
+.img-layer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.img-content-layer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-cont:hover .img-layer{
+    display: block !important;
+}
+
+.img-cont:hover .img-content-layer{
+    display: block !important;
+}
+
+.selected-link{
+    position: relative;
+}
+
+.selected-link::before{
+    content: "";
+    position: absolute;
+    border-bottom: var(--main) solid 2px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 45px;
+    margin-top: 5px;
+}
+
+.client-title{
+    position: relative;
+}
+
+.client-title::before{
+    content: "";
+    position: absolute;
+    border-bottom: var(--main) solid 2px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100px;
+    margin-top: 5px;
+}
+
+.client-title::after{
+    content: "TESTIMONIAL";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    opacity: 8%;
+}
+
+.client-pages{
+    font-size: 10px;
+}
+
+.client-pages a{
+    color: rgb(168, 164, 164);
+}
+
+.selected-page{
+    color: var(--main) !important;
+    border: var(--main) 1px solid;
+    border-radius: 100%;
+}
+
+.contact-title{
+    position: relative;
+}
+
+.contact-title::before{
+    content: "";
+    position: absolute;
+    border-bottom: var(--main) solid 2px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100px;
+    margin-top: 5px;
+}
+
+.contact-title::after{
+    content: "CONTACT";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    opacity: 8%;
+}
+
+.fa-google:hover{
+    color: red !important;
+    transition-duration: 0.2s;
+}
+
+.fa-github:hover{
+    color: black !important;
+    transition-duration: 0.2s;
+}
+
+input{
+    height: 50px !important;
+    opacity: 60%;
+}
+
+textarea{
+    opacity: 60%;
+}
+
+.author{
+    color: var(--main);
+}
+
+.author:hover{
+    color: rgb(68, 172, 68);
+}
+
+.terms{
+    color: black;
+}
+
+.terms:hover{
+    color: var(--main);
+}
+
+.gear-container{
+    top: 30%;
+    left: 98%;
+}
+
+.gear button{
+    background-color: #3b3b3b;
+    border-color: #3b3b3b;
+}
+
+.gear button:hover{
+    background-color: #3b3b3b !important;
+    border-color: #3b3b3b !important;
+}
+
+.swiper-container{
+    top: 94%;
+    left: 97%;
+}
+
+.swiper button{
+    background-color: #ddd;
+    border-color: #ddd;
+}
+
+.swiper button:hover{
+    background-color: var(--main) !important;
+    border-color: var(--main) !important;
+}
